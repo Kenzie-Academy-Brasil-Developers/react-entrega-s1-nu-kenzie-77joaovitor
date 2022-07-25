@@ -1,0 +1,135 @@
+.list__container {
+  width: 25.5rem;
+}
+
+.list__finance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 1rem;
+}
+
+.list__buttonContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.list__buttonContainer > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+  font-size: 80%;
+
+  width: 30%;
+  height: 2.6rem;
+  background: #e9ecef;
+  border: 1.4px solid #e9ecef;
+  border-radius: 8px;
+}
+
+.list__buttonContainer > button:hover {
+  background-color: #fd377e;
+  color: white;
+}
+
+.list__finance > h2 {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 30px;
+  color: rgba(33, 37, 41, 0.8);
+}
+
+ul {
+  width: 100%;
+  padding-left: 0px;
+  height: 59vh;
+  overflow: scroll;
+}
+
+.card__li {
+  display: flex;
+  width: 100%;
+  height: 6.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  margin-bottom: 0.5rem;
+  box-shadow: 1px 3px 1px rgb(245, 244, 244);
+  border-radius: 4px;
+  border-left: 4px solid rgba(3, 184, 152, 1);
+}
+
+.card__liGray {
+  display: flex;
+  width: 100%;
+  height: 6.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  margin-bottom: 0.5rem;
+  box-shadow: 1px 3px 1px rgb(245, 244, 244);
+  border-radius: 4px;
+  border-left: 4px solid rgba(233, 236, 239, 1);
+}
+
+.card__container {
+  margin-left: 2rem;
+  margin-top: -2.5rem;
+}
+
+.card__description {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 30px;
+  color: #212529;
+}
+
+.card__valueButton {
+  width: 30%;
+  margin-top: -3rem;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__button {
+  border: none;
+}
+
+@media screen and (max-width: 450px) {
+  .list__container {
+    width: 20rem;
+    margin-top: 10rem;
+  }
+
+  .list__finance {
+    width: 20rem;
+    display: block;
+  }
+  .list__buttonContainer {
+  }
+  ul {
+    overflow: visible;
+    margin-top: 5rem;
+  }
+
+  .card__ul {
+    width: 20rem;
+  }
+
+  li {
+    width: 20rem;
+  }
+
+  .form__type {
+    width: 15rem;
+  }
+}
