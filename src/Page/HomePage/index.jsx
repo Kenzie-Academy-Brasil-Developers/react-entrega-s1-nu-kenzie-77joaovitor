@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Form from "../../Components/Form/Form";
 import List from "../../Components/List/List";
+import logo from "../../assets/NuKenzie.png";
 
 const HomePage = ({
   setListTransactions,
@@ -26,7 +27,7 @@ const HomePage = ({
     <>
       <header>
         <div>
-          <img src="./Nukenzie.png" alt="" />
+          <img src={logo} alt="" />
           <button className="header__button">
             <Link to={"/"}>Inicio</Link>
           </button>

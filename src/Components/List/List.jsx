@@ -1,4 +1,5 @@
 import "./List.css";
+import trash from "../../assets/trash.png";
 const List = ({
   listTransactions,
   filterListTransaction,
@@ -39,7 +40,7 @@ const List = ({
                   <img
                     id={item.id}
                     onClick={filterListTransaction}
-                    src="./trash.png"
+                    src={trash}
                     alt=""
                   />
                 </button>
